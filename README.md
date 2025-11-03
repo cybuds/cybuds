@@ -12,8 +12,7 @@ I enjoy:
 
 ### Current Projects
 - **My Website** - A personal site to showcase my work and interests
-- thats it lol
-
+- **Nonstop Nut Nov Site** - A silly site about the opposite of NNN.
 ### Connect
 Feel free to check out my repositories and see what I'm working on. Or, click on one of my 3 epic social medias.
 
