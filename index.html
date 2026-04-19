@@ -1,63 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Cybuds</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #1a1a1a;
-      margin: 0;
-      padding: 0;
-      color: #e0e0e0;
-    }
-    header {
-      color: #fff;
-      padding: 2rem;
-      border-bottom: 1px solid #444;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    main {
-      padding: 2rem;
-      max-width: 700px;
-      margin: 0 auto;
-      line-height: 1.6;
-    }
-    main h2 {
-      margin-top: 0;
-      color: #fff;
-    }
-    footer {
-      margin-top: 2rem;
-      color: #888;
-      font-size: 0.9rem;
-      background: #0d0d0d;
-      padding: 1rem 2rem;
-    }
-    a {
-      color: #fff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybuds</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 </head>
 <body>
-  <header>
-    <h1>Hi</h1>
-  </header>
-  <main>
-    <h2>About Me</h2>
-    <p>I enjoy coding, art, gaming, and more.</p>
-    <p>Check out my projects on <a href="https://github.com/cybuds" target="_blank">GitHub</a>.</p>
-  </main>
-  <footer>
-    &copy; 2025 Cybuds
-  </footer>
+    <div class="container">
+        <main class="content">
+            <p class="greeting">Hi, I'm</p>
+            <h1 class="title">CYBUDS</h1>
+            
+            <p class="bio">
+                Another human being on the internet. I make videos on YouTube and occasionally stream on Twitch.
+                I like coding, making art, and sometimes building cool websites. 
+            </p>
+
+            <div class="interests">
+                <h2>Interests</h2>
+                <ul>
+                    <li>Coding</li>
+                    <li>Gaming</li>
+                    <li>Art</li>
+                    <li>Web-dev (when I feel like it)</li>
+                </ul>
+            </div>
+
+            <div class="socials">
+                <a href="https://youtube.com/@cybuds" target="_blank" rel="noopener noreferrer" class="social-link" title="YouTube">
+                    <i class="bi bi-youtube"></i>
+                </a>
+                <a href="https://twitter.com/cybudss" target="_blank" rel="noopener noreferrer" class="social-link" title="Twitter/X">
+                    <i class="bi bi-twitter-x"></i>
+                </a>
+                <a href="https://twitch.tv/CybudsLIVE" target="_blank" rel="noopener noreferrer" class="social-link" title="Twitch">
+                    <i class="bi bi-twitch"></i>
+                </a>
+                <a href="https://github.com/cybuds" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+                    <i class="bi bi-github"></i>
+                </a>
+            </div>
+        </main>
+
+        <aside class="recent-videos">
+            <h3>Recent Videos</h3>
+            <div id="videos-container" class="videos-list">
+                <p class="loading">Loading videos...</p>
+            </div>
+        </aside>
+
+        <footer class="footer">
+            <p><span id="year"></span> Cybuds</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
