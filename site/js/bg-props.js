@@ -1,1 +1,0 @@
-// Props are now directly in index.html
