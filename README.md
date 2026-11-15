@@ -14,7 +14,6 @@ I enjoy:
 - **My Website** - A personal site to showcase my work and interests
 
 ### Connect
-Feel free to check out my repositories and see what I'm working on. Or, click on one of my 3 epic social medias.
+Feel free to check out my repositories and see what I'm working on. Or, click on one of my socials.
 
 ---
-⭐ Thanks for visiting my GitHub page!
