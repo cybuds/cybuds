@@ -203,7 +203,7 @@ function showAd() {
 bannerImg.addEventListener("load", () => banner.classList.remove("swap"));
 
 if (adList.length) {
-  banner.hidden = false;
+  document.getElementById("adslot").hidden = false;
   showAd();
   if (adList.length > 1) setInterval(showAd, AD_SECONDS * 1000);
 }

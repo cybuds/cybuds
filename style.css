@@ -40,7 +40,10 @@ body::after { content: ""; position: fixed; inset: 0; z-index: 50; pointer-event
 #theme .rays { transform-origin: 12px 12px; transform: rotate(0) scale(1); opacity: 1; transition: transform .5s ease, opacity .35s ease; }
 :root[data-theme="dark"] #theme .cutter { transform: translate(4px, -3px); }
 :root[data-theme="dark"] #theme .rays { transform: rotate(-90deg) scale(.3); opacity: 0; }.banner { display: block; width: min(94vw, 728px); aspect-ratio: 1494 / 271; margin: 1.4rem 0 0 50%; transform: translateX(-50%); line-height: 0; transition: opacity .35s ease; }
-.banner[hidden] { display: none; }
+.adslot { width: min(94vw, 468px); margin: 1.4rem 0 0 50%; transform: translateX(-50%); }
+.adslot[hidden] { display: none; }
+.banner { display: block; aspect-ratio: 1494 / 271; border: 1px solid rgba(128, 128, 128, .45); line-height: 0; transition: opacity .35s ease; }
 .banner.swap { opacity: 0; }
 .banner:not([href]) { cursor: default; }
 .banner img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.adnote { margin-top: 3px; font: 10px/1.2 Arial, sans-serif; color: #999; text-align: right; }
