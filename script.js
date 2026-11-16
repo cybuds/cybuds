@@ -1,4 +1,3 @@
-// Gotta put the picture names in here, the actual files go in the images folder
 const FOLDER = "images/";
 const IMAGES = [];
 
@@ -179,7 +178,7 @@ const themeBtn = document.getElementById("theme");
     addEventListener("resize", close);
   })();
 const ADS = [
-  { file: "serverpromo.png", link: "" },
+  { file: "serverpromo.png", link: "https://discord.gg/EUDeNXvsvA" },
 ];
 const AD_SECONDS = 15;
 
