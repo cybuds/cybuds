@@ -178,3 +178,32 @@ const themeBtn = document.getElementById("theme");
     document.addEventListener("click", (e) => { if (isOpen && !here.contains(e.target)) close(); });
     addEventListener("resize", close);
   })();
+const ADS = [
+  { file: "serverpromo.png", link: "" },
+];
+const AD_SECONDS = 15;
+
+const banner = document.getElementById("banner");
+const bannerImg = banner.querySelector("img");
+const adList = ADS.filter((a) => a.file);
+let adNow = -1;
+
+function showAd() {
+  let n;
+  do { n = Math.floor(Math.random() * adList.length); } while (adList.length > 1 && n === adNow);
+  adNow = n;
+  const ad = adList[n];
+  banner.classList.add("swap");
+  setTimeout(() => {
+    bannerImg.src = encodeURI("images/ads/" + ad.file);
+    if (ad.link) banner.href = ad.link;
+    else banner.removeAttribute("href");
+  }, 350);
+}
+bannerImg.addEventListener("load", () => banner.classList.remove("swap"));
+
+if (adList.length) {
+  banner.hidden = false;
+  showAd();
+  if (adList.length > 1) setInterval(showAd, AD_SECONDS * 1000);
+}
