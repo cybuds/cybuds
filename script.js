@@ -69,6 +69,7 @@ const themeBtn = document.getElementById("theme");
     const dark = document.documentElement.getAttribute("data-theme") !== "dark";
     if (dark) document.documentElement.setAttribute("data-theme", "dark");
     else document.documentElement.removeAttribute("data-theme");
+    try { localStorage.setItem("theme", dark ? "dark" : "light"); } catch (e) {}
   });
   (() => {
     const logoEl = document.getElementById("logo");
